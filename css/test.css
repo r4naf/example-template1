@@ -1,0 +1,136 @@
+html, body {
+	width: 100%; 
+	height: 100%; 
+	padding: 0; 
+	margin: 0;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+}
+
+.floatDiv{
+	position: fixed; 
+	background-color: #FFF;
+	z-index:5;
+	font-size: 1.5rem;
+	font-family:Impact, Tahoma, Arial, Helvetica, sans-serif;
+	padding: 0.2rem 1.2rem 0.2rem 1.2rem;
+	border-radius: 0.5rem;
+	border: 1px solid #000;
+	opacity: 0.9;
+	text-align:center;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 5px 20px 0 rgba(0,0,0,0.19);
+}
+
+#divPercent{
+	top: 3.5rem;
+	right: 1.5rem;
+	display: none;
+}
+
+#divMenuBtn{
+	bottom: 0.5rem;
+	right: 1.5rem;
+	display: none;
+}
+
+#top {
+	position: fixed; 
+	top: 0px;
+	background-color: #fe9;
+	width: 100%;
+	height: 2rem;
+	padding: 0.5rem;
+	font-size: 1.2rem;
+	z-index:1;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#infoblocks{
+	position: fixed;
+	top: 3rem;
+	overflow-y: auto; 
+	width: 100%;
+	height: calc(100% - 3rem);
+}
+
+.infoblock {
+	width: 100%;
+}
+
+.infoblockinto {
+	padding: 1rem;
+}
+
+.animate-link{
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+#menuLink{
+	display: none;
+}
+
+.sliderMain{
+	width: 100%;
+	height: 260px;
+}
+
+.sliderInside{
+	width: 400px;
+	height: 200px;
+	background-color: #fff;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  text-align: center;
+	padding: 25px;
+	position:relative;
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+	border-radius: 0.5rem;
+	border: 5px solid #BBB;
+}
+
+.sliderBtn {
+	position:absolute; 
+	bottom:-10px;
+	font-size: 3rem;
+}
+
+.sliderBtn a {
+	text-decoration: none;
+	color: #333;
+}
+
+.sliderBtn a:hover {
+	color: #00F;
+}
+
+.sliderLeftBtn{
+	left:5px; 
+}
+
+.sliderRightBtn{
+	right:5px; 
+}
+
+@media screen and (orientation: portrait) {
+#top{
+	display: none;
+}
+#infoblocks{
+	top: 0;
+	height: 100%;
+}
+#divPercent{
+	top: 0.5rem;
+}
+#divMenuBtn{
+	display: block;
+}
+.sliderInside{
+	width: calc(100% - 4rem);
+}
+}
